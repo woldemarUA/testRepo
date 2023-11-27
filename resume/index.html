@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <title>Vlad Tymchenko resumè de REAC et REV2</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu" id="menu">
+          <li>
+            <a href="#front-end">Competences pour developpeur front-end</a>
+          </li>
+          <li><a href="#back-end">Competences pour developpeur back-end</a></li>
+          <li><a href="#traversales">Compétences Transversales</a></li>
+          <li><a href="#reac">Résumé du document REAC</a></li>
+          <li><a href="#rev2">Résumé du document REV 2</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="front-end">
+      <article class="front-end-art" id="article"></article>
+      <aside>
+        <ul class="front-end-menu" id="side-menu"></ul>
+        <div id="button-text"></div>
+        <button id="genPdf">Générer un pdf</button>
+      </aside>
+    </section>
+    <script src="script.js"></script>
+    <script src="pdf.js"></script>
+  </body>
+</html>

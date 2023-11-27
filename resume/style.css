@@ -1,0 +1,139 @@
+/* Global rules*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+aside,
+article {
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+/* HEADER rules */
+header {
+  position: fixed;
+  min-height: 10vh;
+  background: black;
+  color: whitesmoke;
+  width: 100%;
+  padding: 2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+}
+nav li {
+  margin: 0 0.5rem;
+}
+nav a {
+  color: antiquewhite;
+}
+nav a:hover {
+  color: black;
+  background: antiquewhite;
+}
+/* SECTION RULES */
+
+section {
+  padding-top: 10vh;
+  /* height: 90vh; */
+  display: flex;
+}
+
+section h3 {
+  margin: 1rem 0;
+}
+section a {
+  color: black;
+  font-size: 1.3rem;
+  /* padding: 0.3rem 0.6rem; */
+}
+
+section a:hover {
+  color: whitesmoke;
+  background: black;
+}
+
+aside {
+  flex: 1 1 30%;
+}
+aside ul {
+  background: rgba(207, 188, 188, 0.8);
+  padding: 2rem;
+}
+aside li {
+  padding: 0.5rem 1rem;
+}
+#button-text p {
+  background: rgba(207, 188, 188, 0.8);
+  padding: 1rem 2.5rem;
+  font-size: 1.3rem;
+  margin-top: 0;
+  border-top: 0.1rem solid black;
+}
+aside button {
+  width: 100%;
+  background: rgb(49, 48, 48);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+article {
+  flex: 1 1 70%;
+}
+article p {
+  text-align: justify;
+}
+article ul {
+  list-style: disc;
+  margin-left: 4rem;
+}
+
+#front-end {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 40%;
+  }
+  header {
+    position: fixed;
+    min-height: 8vh;
+    background: black;
+    color: whitesmoke;
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 30%;
+  }
+}
